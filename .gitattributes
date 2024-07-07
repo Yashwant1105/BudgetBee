@@ -3,3 +3,17 @@
 *.md linguist-documentation
 *.jpg linguist-vendored
 *.png linguist-vendored
+
+
+
+- [answers.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/answers.dart): Manages the answer choices for the quiz questions.
+- [home_page.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/home_page.dart): The main landing page for the application.
+- [main.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/main.dart): The entry point of the application.
+- [question_identifier.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/question_identifier.dart): Identifies and manages individual questions.
+- [questionlist.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/data/questionlist.dart): Manages the list of quiz questions.
+- [questions.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/questions.dart): Contains the quiz questions data.
+- [questions_summary.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/questions_summary.dart): Displays a summary of the questions answered.
+- [quiz.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/questions.dart): Manages the quiz logic.
+- [quizquestions.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/models/quizquestions.dart): Contains the detailed structure of quiz questions.
+- [results_screen.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/results_screen.dart): Displays the results of the quiz.
+- [summary_item.dart](https://github.com/Yashwant1105/Quiz_App/blob/main/lib/summary_item.dart): Displays individual summary items for the quiz results.

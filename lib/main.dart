@@ -10,7 +10,7 @@ var kDarkColorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
-  runApp(
+    runApp(
     MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
         colorScheme: kDarkColorScheme, 
@@ -44,4 +44,5 @@ void main() {
       home: const Expenses(),
     ),
   );
+  // });
 }
