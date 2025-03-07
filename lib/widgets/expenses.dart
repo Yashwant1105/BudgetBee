@@ -1,8 +1,22 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:expense_tracker/widgets/expenses_list/chart/chart.dart';
 import 'package:expense_tracker/widgets/expenses_list/expenses_list.dart';
-import 'package:flutter/material.dart';
-import "package:expense_tracker/model/expense.dart";
-import "package:expense_tracker/new_expenses.dart";
+import 'package:expense_tracker/model/expense.dart';
+import 'package:expense_tracker/new_expenses.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        textTheme: GoogleFonts.interTextTheme(),
+        scaffoldBackgroundColor: const Color.fromARGB(241, 8, 9, 9),
+      ),
+      home: const Expenses(),
+    ),
+  );
+}
 
 class Expenses extends StatefulWidget {
   const Expenses({super.key});
@@ -17,7 +31,7 @@ class _ExpensesState extends State<Expenses> {
 
   void addExpense() {
     showModalBottomSheet(
-      useSafeArea: true,
+        useSafeArea: true,
         isScrollControlled: true,
         context: context,
         builder: (ctx) => NewExpenses(onAddExpense: _addExpenses));
@@ -55,7 +69,8 @@ class _ExpensesState extends State<Expenses> {
     final width = MediaQuery.of(context).size.width;
 
     Widget mainContent = const Center(
-      child: Text("No expenses found, start adding some!"),
+      child: Text("No expenses found, start adding some!",
+          style: TextStyle(color: Color.fromARGB(255, 52, 208, 255))),
     );
 
     if (registeredExpenses.isNotEmpty) {
@@ -64,29 +79,66 @@ class _ExpensesState extends State<Expenses> {
         onRemoveExpense: removeExpense,
       );
     }
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Expense Tracker"),
+        backgroundColor: const Color.fromARGB(255, 8, 9, 9),
+        title: Text(
+          'BudgetBee: Expense Tracker',
+          style: GoogleFonts.inter(
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
+            foreground: Paint()
+              ..shader = const LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 251, 207, 77),
+                  Color.fromARGB(255, 255, 94, 97)
+                ],
+              ).createShader(const Rect.fromLTWH(0.0, 0.0, 200.0, 70.0)),
+          ),
+        ),
         actions: [
           IconButton(
             onPressed: addExpense,
-            icon: const Icon(Icons.add),
+            icon: ShaderMask(
+              shaderCallback: (Rect bounds) {
+                return const LinearGradient(
+                  colors: [
+                    Color.fromARGB(75, 222, 98, 98),
+                    Color.fromARGB(255, 251, 165, 111)
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ).createShader(bounds);
+              },
+              blendMode: BlendMode.srcIn,
+              child: const Icon(
+                Icons.add,
+                weight: 100,
+                size: 40,
+              ),
+            ),
           ),
         ],
       ),
-      body: width < 600
-          ? Column(
-              children: [
-                Chart(expenses: registeredExpenses),
-                Expanded(child: mainContent),
-              ],
-            )
-          : Row(
-              children: [
-                Expanded(child: Chart(expenses: registeredExpenses),),
-                Expanded(child: mainContent),
-              ],
-            ),
+      body: Container(
+        color: const Color.fromARGB(241, 8, 9, 9),
+        child: width < 600
+            ? Column(
+                children: [
+                  Chart(expenses: registeredExpenses),
+                  Expanded(child: mainContent),
+                ],
+              )
+            : Row(
+                children: [
+                  Expanded(
+                    child: Chart(expenses: registeredExpenses),
+                  ),
+                  Expanded(child: mainContent),
+                ],
+              ),
+      ),
     );
   }
 }

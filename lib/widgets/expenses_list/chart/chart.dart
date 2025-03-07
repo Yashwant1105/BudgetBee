@@ -30,6 +30,14 @@ class Chart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (expenses.isEmpty) {
+      return const Center(
+          child: Text(
+        "No data available",
+        style: TextStyle(color: Color.fromARGB(255, 52, 208, 255)),
+      ));
+    }
+
     final isDarkMode =
         MediaQuery.of(context).platformBrightness == Brightness.dark;
     return Container(
