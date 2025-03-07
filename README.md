@@ -1,81 +1,82 @@
-# **Expense Tracker**
+# **BudgetBee - Expense Management App**
 
-Expense Tracker is a Flutter application that helps users track their daily expenses efficiently. The app provides features for adding new expenses, viewing a list of expenses, and visualizing expense data with charts.
+BudgetBee is an **enhanced and upgraded version of expense tracker** that helps users manage their daily expenses efficiently. It features **user authentication, expense categorization, and spending analytics**, providing users with insights into their financial habits.
 
+---
 
-### *Features*
+## **✨ Features**
 
-**Add New Expenses:** Easily add new expense items with details such as title, amount, and date.
+- **User Authentication:** Secure login and sign-up using Supabase authentication.
+- **Expense Management:** Add, edit, and delete expenses categorized under different spending areas.
+- **Spending Insights:** View expenses in a **chart-based** breakdown.
+- **Undo Expense Deletion:** Recover recently deleted expenses via a snackbar action.
 
-**View Expenses**: See a list of all expenses with the ability to delete them.
+---
 
-**Expense Charts:** Visualize expenses in a bar chart to get insights into spending patterns.
+## **📁 File Structure**
 
+The project is organized as follows:
 
+- **[main.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/main.dart)** - Initializes the app and sets up Supabase authentication.
+- **[auth_service.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/auth/auth_service.dart)** - Handles user authentication using Supabase.
+- **[user_login.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/auth/user_login.dart)** - Implements the user login screen with credential validation.
+- **[user_signup.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/auth/user_signup.dart)** - Provides the user registration screen with email confirmation.
+- **[chart.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/widgets/chart.dart)** - Generates graphical insights for expenses.
+- **[chart_bar.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/widgets/chart_bar.dart)** - Defines the individual bars in the expense chart.
+- **[expense.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/models/expense.dart)** - Defines the data model for expenses.
+- **[expenses_list.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/widgets/expenses_list.dart)** - Displays a categorized list of expenses.
+- **[expense_item.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/widgets/expense_item.dart)** - Represents an individual expense item.
+- **[new_expenses.dart](https://github.com/Yashwant1105/BudgetBee/blob/main/lib/widgets/new_expenses.dart)** - Provides the UI for adding new expenses.
 
-### *File Structure*
+---
 
-The project consists of the following Dart files:
+## **🔹 Flutter Concepts Used**
 
-[main.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/main.dart): The entry point of the application. It initializes the app and sets up the main widget tree and contains the theming part of the app.
+- **State Management:** Uses `StatefulWidget` with `setState`.
+- **Navigation & Routing:** Implements screen navigation using `Navigator.pushReplacement`.
+- **Authentication:** Uses **Supabase** for login and sign-up.
+- **UI Components:** Includes **custom widgets** for expense items and visual components.
+- **Snackbar Actions:** Allows undoing deleted expenses via `SnackBarAction`.
 
-[chart.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/widgets/expenses_list/chart/chart.dart): Contains the logic and UI for displaying expense data in a chart format.
+---
 
-[chart_bar.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/widgets/expenses_list/chart/chart_bar.dart): Defines the individual bars used in the expense chart.
+## **🚀 Setup and Installation**
 
-[expense.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/model/expense.dart): Defines the data model for an expense item.
+### **Prerequisites**
 
-[expense_item.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/widgets/expenses_list/expense_item.dart): Represents a single expense item in the UI.
+Ensure you have the following installed:
 
-[expenses.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/widgets/expenses.dart): Manages the overall state and logic of expenses within the app.
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- [Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/)
 
-[expenses_list.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/widgets/expenses_list/expenses_list.dart): Provides a list view of all expense items.
-
-[new_expenses.dart](https://github.com/Yashwant1105/Expense_Tracker/blob/main/lib/new_expenses.dart): Contains the UI and logic for adding new expenses.
-
-
-
-### *Flutter Concepts Used*
-
-- **State Management**: Uses native Flutter implementation with StatefulWidget and setState.
-- **Navigation**: Implements modal bottom sheets for input forms.
-- **Custom Widgets**: Encapsulates UI components like expense items and charts.
-- **Theming and Styling**: Uses ThemeData contexts, LinearGradient, and other styling techniques.
-- **Asset Management**: Efficiently manages icons and other assets with careful attention to related Element Tree.
-  
-
-### *Setup and Installation*
-
-#### Prerequisites
-
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) installed on your machine.
-- An editor like [Android Studio](https://developer.android.com/studio) or [Visual Studio Code](https://code.visualstudio.com/).
-
-#### Steps
+### **Steps to Run**
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Yashwant1105/Expense_Tracker.git
-   cd Expense_Tracker
+   git clone https://github.com/Yashwant1105/BudgetBee.git
+   cd BudgetBee
    ```
-    
 
 2. **Install Dependencies**:
    ```bash
    flutter pub get
    ```
-    
 
 3. **Run the App**:
    ```bash
    flutter run
    ```
 
+---
 
-### *Usage*
+## **📖 Usage Guide**
 
-1. Launch the app on your device or emulator.
-2. Press the "+" button to add a new expense.
-3. Fill in the expense details (title, amount, date, and category).
-4. View the list of expenses and the corresponding chart.
-5. Swipe left or right on an expense to delete it, with an option to undo.
+1. Open the app and **log in or sign up**.
+2. Add expenses by selecting a **category, amount, and description**.
+3. View your expenses in a detailed **list or chart format**.
+4. Swipe left on an expense to delete it (with an option to undo).
+
+---
+
+
+
