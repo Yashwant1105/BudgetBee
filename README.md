@@ -1,6 +1,6 @@
 # **BudgetBee - Expense Management App**
 
-BudgetBee is an **enhanced and upgraded version of [**Expense Tracker**](https://github.com/Yashwant1105/Expense_Tracker) that helps users manage their daily expenses efficiently. It features **user authentication, expense categorization, and spending analytics**, providing users with insights into their financial habits.
+BudgetBee is an **enhanced and upgraded version of [**Expense Tracker**](https://github.com/Yashwant1105/Expense_Tracker)** that helps users manage their daily expenses efficiently. It features **user authentication, expense categorization, and spending analytics**, providing users with insights into their financial habits.
 
 ---
 
