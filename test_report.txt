@@ -1,0 +1,8 @@
+00:00 +0: loading C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart
+00:00 +0: C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart: AuthService Tests Sign up returns null on success
+00:00 +1: C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart: AuthService Tests Sign up returns an error message on failure
+00:00 +2: C:/Users/yashw/Dart/dart1/BudgetBee/test/expenses_list_test.dart: Expenses list shows items and supports deletion
+00:01 +3: C:/Users/yashw/Dart/dart1/BudgetBee/test/new_expenses_test.dart: New expense form loads correctly
+00:01 +4: C:/Users/yashw/Dart/dart1/BudgetBee/test/user_login_test.dart: Login screen loads correctly
+00:01 +5: C:/Users/yashw/Dart/dart1/BudgetBee/test/widget_test.dart: App loads UserLogin screen
+00:02 +6: All tests passed!

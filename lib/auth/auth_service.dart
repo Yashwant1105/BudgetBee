@@ -6,9 +6,9 @@ class AuthService {
   Future<String?> signUp(String email, String password) async {
     try {
       await supabase.auth.signUp(email: email, password: password);
-      return null; // Success
+      return null;
     } catch (e) {
-      return e.toString(); // Return error message
+      return e.toString();
     }
   }
 }

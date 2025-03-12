@@ -42,7 +42,7 @@ class ExpenseBucket {
             .toList();
 
   double get totalExpenses {
-    if (expenses.isEmpty) return 0; // ✅ Prevents null access
+    if (expenses.isEmpty) return 0;
     double sum = 0;
     for (final expense in expenses) {
       sum += expense.amount;

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite errors="0" failures="0" tests="2" skipped="0" name="C:.Users.yashw.Dart.dart1.BudgetBee.test.auth_service" timestamp="2025-03-12T07:59:31">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.yashw.Dart.dart1.BudgetBee.test.auth_service" name="AuthService Tests Sign up returns null on success" time="0.06"/>
+    <testcase classname="C:.Users.yashw.Dart.dart1.BudgetBee.test.auth_service" name="AuthService Tests Sign up returns an error message on failure" time="0.009"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="C:.Users.yashw.Dart.dart1.BudgetBee.test.expenses_list" timestamp="2025-03-12T07:59:31">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.yashw.Dart.dart1.BudgetBee.test.expenses_list" name="Expenses list shows items and supports deletion" time="1.454"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="C:.Users.yashw.Dart.dart1.BudgetBee.test.new_expenses" timestamp="2025-03-12T07:59:31">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.yashw.Dart.dart1.BudgetBee.test.new_expenses" name="New expense form loads correctly" time="1.333"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="C:.Users.yashw.Dart.dart1.BudgetBee.test.user_login" timestamp="2025-03-12T07:59:31">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.yashw.Dart.dart1.BudgetBee.test.user_login" name="Login screen loads correctly" time="1.293"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" tests="1" skipped="0" name="C:.Users.yashw.Dart.dart1.BudgetBee.test.widget" timestamp="2025-03-12T07:59:31">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="C:.Users.yashw.Dart.dart1.BudgetBee.test.widget" name="App loads UserLogin screen" time="1.094"/>
+  </testsuite>
+</testsuites>

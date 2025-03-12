@@ -1,0 +1,31 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":5336,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"C:/Users/yashw/Dart/dart1/BudgetBee/test/expenses_list_test.dart"},"type":"suite","time":8}
+{"test":{"id":3,"name":"loading C:/Users/yashw/Dart/dart1/BudgetBee/test/expenses_list_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":8}
+{"suite":{"id":4,"platform":"vm","path":"C:/Users/yashw/Dart/dart1/BudgetBee/test/new_expenses_test.dart"},"type":"suite","time":9}
+{"test":{"id":5,"name":"loading C:/Users/yashw/Dart/dart1/BudgetBee/test/new_expenses_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":9}
+{"suite":{"id":6,"platform":"vm","path":"C:/Users/yashw/Dart/dart1/BudgetBee/test/user_login_test.dart"},"type":"suite","time":10}
+{"test":{"id":7,"name":"loading C:/Users/yashw/Dart/dart1/BudgetBee/test/user_login_test.dart","suiteID":6,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":10}
+{"count":5,"time":11,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null,"observatoryUri":null}}]
+{"testID":3,"error":"Failed to load \"C:/Users/yashw/Dart/dart1/BudgetBee/test/expenses_list_test.dart\": Compilation failed for testPath=C:/Users/yashw/Dart/dart1/BudgetBee/test/expenses_list_test.dart","stackTrace":"","isFailure":false,"type":"error","time":2309}
+{"testID":3,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":2314}
+{"suite":{"id":8,"platform":"vm","path":"C:/Users/yashw/Dart/dart1/BudgetBee/test/widget_test.dart"},"type":"suite","time":2317}
+{"test":{"id":9,"name":"loading C:/Users/yashw/Dart/dart1/BudgetBee/test/widget_test.dart","suiteID":8,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2317}
+{"testID":1,"error":"Error: the Dart compiler exited unexpectedly.","stackTrace":"package:flutter_tools/src/base/common.dart 10:3  throwToolExit\npackage:flutter_tools/src/compile.dart 893:9     DefaultResidentCompiler._compile.<fn>\ndart:async/zone.dart 1422:47                     _rootRunUnary\ndart:async/zone.dart 1324:19                     _CustomZone.runUnary\ndart:async/future_impl.dart 902:45               Future._propagateToListeners.handleValueCallback\ndart:async/future_impl.dart 931:13               Future._propagateToListeners\ndart:async/future_impl.dart 827:9                Future._propagateToListeners\ndart:async/future_impl.dart 707:5                Future._completeWithValue\ndart:async/future_impl.dart 777:7                Future._asyncCompleteWithValue.<fn>\ndart:async/zone.dart 1414:13                     _rootRun\ndart:async/zone.dart 1317:19                     _CustomZone.run\ndart:async/zone.dart 1225:7                      _CustomZone.runGuarded\ndart:async/zone.dart 1265:23                     _CustomZone.bindCallbackGuarded.<fn>\ndart:async/schedule_microtask.dart 40:21         _microtaskLoop\ndart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop\ndart:isolate-patch/isolate_patch.dart 118:13     _runPendingImmediateCallback\ndart:isolate-patch/isolate_patch.dart 185:5      _RawReceivePort._handleMessage\n","isFailure":false,"type":"error","time":2344}
+{"testID":1,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":2593}
+{"group":{"id":10,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":2596}
+{"group":{"id":11,"suiteID":0,"parentID":10,"name":"AuthService Tests","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":12,"column":3,"url":"file:///C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart"},"type":"group","time":2598}
+{"test":{"id":12,"name":"AuthService Tests Sign up returns null on success","suiteID":0,"groupIDs":[10,11],"metadata":{"skip":false,"skipReason":null},"line":13,"column":5,"url":"file:///C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart"},"type":"testStart","time":2598}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2652}
+{"test":{"id":13,"name":"AuthService Tests Sign up returns an error message on failure","suiteID":0,"groupIDs":[10,11],"metadata":{"skip":false,"skipReason":null},"line":21,"column":5,"url":"file:///C:/Users/yashw/Dart/dart1/BudgetBee/test/auth_service_test.dart"},"type":"testStart","time":2653}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2659}
+{"testID":5,"error":"Failed to load \"C:/Users/yashw/Dart/dart1/BudgetBee/test/new_expenses_test.dart\": Compilation failed for testPath=C:/Users/yashw/Dart/dart1/BudgetBee/test/new_expenses_test.dart","stackTrace":"","isFailure":false,"type":"error","time":4360}
+{"testID":5,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":4360}
+{"testID":7,"error":"Failed to load \"C:/Users/yashw/Dart/dart1/BudgetBee/test/user_login_test.dart\": Compilation failed for testPath=C:/Users/yashw/Dart/dart1/BudgetBee/test/user_login_test.dart","stackTrace":"","isFailure":false,"type":"error","time":6255}
+{"testID":7,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":6255}
+{"testID":9,"error":"Failed to load \"C:/Users/yashw/Dart/dart1/BudgetBee/test/widget_test.dart\": Compilation failed for testPath=C:/Users/yashw/Dart/dart1/BudgetBee/test/widget_test.dart","stackTrace":"","isFailure":false,"type":"error","time":8264}
+{"testID":9,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":8264}
+{"success":false,"type":"done","time":8267}

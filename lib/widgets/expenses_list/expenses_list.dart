@@ -22,7 +22,7 @@ class ExpensesList extends StatelessWidget {
       itemBuilder: (ctx, index) {
         final expense = expenses[index];
         return Dismissible(
-          key: ValueKey(expense.ID), // Unique key for each item
+          key: ValueKey(expense.ID),
           background: Container(
             color: Colors.red.withOpacity(0.8),
             alignment: Alignment.centerRight,
@@ -31,7 +31,7 @@ class ExpensesList extends StatelessWidget {
           ),
           direction: DismissDirection.endToStart, // Swipe left to delete
           onDismissed: (direction) {
-            onRemoveExpense(expense); // Call the delete function
+            onRemoveExpense(expense);
           },
           child: ExpenseItem(expense),
         );
